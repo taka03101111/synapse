@@ -152,6 +152,8 @@
     @media (max-width:700px) { .container { width:min(100% - 32px,1160px); } .site-header .nav { height:66px; gap:7px; } .brand img { width:124px; } .nav-actions { gap:6px; } .nav-actions .button { min-height:40px; padding:0 9px; font-size:.72rem; } .nav-desktop { display:none; } .section { padding:72px 0; } .hero { padding:40px 0 48px; } .hero h1 { font-size:clamp(2.4rem,9.8vw,3.8rem); } .hero-subtitle { font-size:1.07rem; } .hero-grid { min-height:auto; } .hero-actions { margin:22px 0; } .trust-list { font-size:.69rem; gap:8px 12px; } .hero-visual { padding-top:8px; } .hero .pc-frame { padding:0 7px 7px; border-radius:11px 11px 4px 4px; } .pc-bar { height:31px; gap:4px; } .window-dot { width:5px; height:5px; } .pc-address { font-size:.53rem; padding:2px 15px; } .pc-base { width:102%; margin-left:-1%; height:9px; } .model-strip { margin-top:16px; gap:5px; } .model-strip span { padding:3px 9px; font-size:.68rem; } .problem-grid,.pillar-grid,.case-grid,.faq-grid,.employee-points,.environment-features { grid-template-columns:1fr; } .point { grid-template-columns:35px 1fr; } .employee-showcase { gap:28px; } .product-row,.product-row + .product-row { padding-top:36px; } .product-row + .product-row { margin-top:38px; } .product-copy h3 { font-size:1.8rem; } .proof-grid { grid-template-columns:1fr 1fr; } .proof { padding:17px; } .proof:nth-child(2) { border-right:0; } .proof:nth-child(-n+2) { border-bottom:1px solid var(--line); } .department-grid { grid-template-columns:1fr 1fr; } .timeline { grid-template-columns:1fr 1fr; gap:26px 15px; } .step:not(:last-child)::after { display:none; } .support-band { grid-template-columns:1fr; padding:24px; } .security-list { grid-template-columns:1fr; } .support-stats { grid-template-columns:1fr; gap:20px; } .footer-row { display:block; } .price-card { padding:24px; } .price { font-size:2.4rem; } .screen-dialog { width:96vw; } }
     @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .button { transition:none; } }
   </style>
+  <link rel="stylesheet" href="assets/demo.css">
+  <script src="assets/demo.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -160,7 +162,7 @@
       <nav class="nav-links" aria-label="主要ナビゲーション">
         <a href="#employees">AI社員</a><a href="#environment">法人AI環境</a><a href="#support">導入支援</a><a href="#cases">導入実績</a><a href="#pricing">料金</a>
       </nav>
-      <div class="nav-actions"><a class="button" href="https://tenho7.jp/contact/">資料請求</a><a class="button primary" href="https://tenho7.jp/contact/">無料デモ<span class="nav-desktop">・相談 →</span></a></div>
+      <div class="nav-actions"><a class="button" href="https://tenho7.jp/contact/">資料請求</a><a class="button primary" href="#demo">無料デモ<span class="nav-desktop">を体験 →</span></a></div>
     </div>
   </header>
 
@@ -172,10 +174,11 @@
           <h1><em>AI社員</em>に、<br>仕事を任せる。</h1>
           <p class="hero-subtitle">採用から、<span class="highlight">働きぶりの管理</span>まで。</p>
           <p class="hero-copy">議事録・集計・問い合わせ対応。<br>いつもの仕事を任せて、チームに時間を。<br>法人向けAIサービス「シナプスAI」。</p>
-          <div class="hero-actions"><a class="button primary" href="https://tenho7.jp/contact/">無料デモを試す →</a><a class="button" href="#employees">操作画面を見る</a></div>
-          <div class="trust-list"><span>組織ごとに環境分離</span><span>入力データは学習に不使用</span></div>
+          <div class="hero-actions"><a class="button primary" href="#demo">無料デモを試す →</a><a class="button" href="#employees">操作画面を見る</a></div>
+          <div class="trust-list"><span>法人向け本サービス：組織ごとに環境分離</span><span>本サービスの入力データは学習に不使用（体験版を除く）</span></div>
         </div>
         <figure class="hero-visual">
+          <div class="screen-kicker">まずは、いつものPCで。シナプスAIの操作画面</div>
           <div class="pc-frame">
             <div class="pc-bar" aria-hidden="true"><span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span><span class="pc-address">synapse-ai.tenho7.jp</span></div>
             <div class="pc-screen"><button class="screen-button" type="button" data-screen-title="シナプスAI｜チャット・モデル切替" aria-label="シナプスAIのチャット画面を拡大"><img src="assets/product-home.png" width="3072" height="1898" fetchpriority="high" alt="議事録作成や企画書作成のテンプレートとAIモデルの切替メニューがあるシナプスAIのホーム画面"></button></div>
@@ -222,6 +225,41 @@
       <div class="department-grid" aria-label="部門別AI社員例"><div class="dept"><b>営業</b><span>議事録担当</span><span>見積担当</span><span>商談フォロー担当</span></div><div class="dept"><b>マーケ</b><span>情報配信担当</span><span>リサーチ担当</span><span>SNS下書き担当</span></div><div class="dept"><b>事務</b><span>問い合わせ担当</span><span>文書担当</span><span>リマインド担当</span></div><div class="dept"><b>経理</b><span>月次集計担当</span><span>請求担当</span><span>経費チェック担当</span></div><div class="dept"><b>総務・人事</b><span>社内報担当</span><span>手続き案内担当</span><span>規程検索担当</span></div></div>
     </div></section>
 
+    <section class="section demo-section" id="demo" aria-labelledby="demo-heading"><div class="container">
+      <div class="demo-intro"><div><div class="eyebrow">TRY SYNAPSE AI</div><h2 id="demo-heading">あなたの<span class="keyword">AI社員</span>を、<br>ここで体験。</h2><p class="lead">仕事のルールを決めたら、あとはチャットで頼むだけ。<br>議事録担当をつくって、いつもの仕事を任せてみましょう。</p></div><span class="demo-free">登録不要<span>このページで体験できます</span></span></div>
+      <ol class="demo-steps" aria-label="体験の流れ"><li id="demo-step-1" class="is-current" aria-current="step"><b>01</b><span>AI社員をつくる</span></li><li id="demo-step-2"><b>02</b><span>仕事を頼む</span></li><li id="demo-step-3"><b>03</b><span>結果を確認する</span></li></ol>
+      <div class="demo-app">
+        <aside class="demo-sidebar" aria-label="AI社員の設定">
+          <div class="demo-brand"><img src="assets/synapse-logo.png" alt="シナプスAI" width="143" height="35"><span>体験版</span></div>
+          <div class="demo-side-label"><span aria-hidden="true">✧</span> カスタムAI</div>
+          <div class="demo-role"><span class="demo-avatar" aria-hidden="true">議</span><div><strong>議事録担当</strong><span>会議メモを、次の行動へ。</span></div></div>
+          <form id="demo-employee-form">
+            <label for="demo-name">AI社員の名前<span>24文字まで</span></label><input id="demo-name" name="name" value="議事録アシスタント" maxlength="24" required autocomplete="off">
+            <label for="demo-rules">仕事のルール<span>自由に編集できます</span></label><textarea id="demo-rules" name="rules" rows="5" maxlength="240" required>会議メモから「決定事項」「担当者と期限」「次のアクション」を整理してください。未確定の情報は「未定」と書き、短い箇条書きでまとめてください。</textarea>
+            <div class="demo-knowledge"><span aria-hidden="true">▤</span><div><strong>仕事に使う情報</strong><p>チャットに入力した会議メモ</p></div></div>
+            <button class="button primary demo-create" id="demo-create" type="submit">このAI社員をつくる <span aria-hidden="true">→</span></button>
+            <p id="demo-setup-status" class="demo-small" role="status">設定するだけでは体験回数を使いません。</p>
+          </form>
+          <div class="demo-flow"><strong>この社員の仕事の流れ</strong><div><span>メモを受け取る</span><i aria-hidden="true">↓</i><span>AIが議事録を作成</span><i aria-hidden="true">↓</i><span class="demo-human">あなたが内容を確認</span></div></div>
+        </aside>
+        <div class="demo-workspace">
+          <div class="demo-chat-header"><div><span class="demo-dot" id="demo-dot"></span><strong id="demo-chat-name">AI社員とのチャット</strong><span id="demo-employee-status">設定待ち</span></div><button type="button" id="demo-new-chat" class="demo-text-button" disabled>＋ 新しいチャット</button></div>
+          <div id="demo-log" class="demo-log" role="log" aria-label="AI社員との会話" aria-live="polite" aria-relevant="additions">
+            <div class="demo-welcome" id="demo-welcome"><div class="demo-welcome-icon" aria-hidden="true">✧</div><span class="demo-overline">YOUR FIRST AI EMPLOYEE</span><h3>まずは、ひとり。<br>あなたのチームにAI社員を。</h3><p>「このAI社員をつくる」を押すと、<br>すぐに仕事を頼めます。</p><div class="demo-example"><span>たとえば、こんな仕事</span><strong>「このメモから、決定事項と<br>やることをまとめて」</strong><small>架空の会議メモもご用意しています。</small></div></div>
+          </div>
+          <div class="demo-result-actions" id="demo-result-actions" hidden><button type="button" id="demo-confirm" class="demo-text-button">✓ 内容を確認しました</button><button type="button" id="demo-copy" class="demo-text-button">回答をコピー</button><span id="demo-result-status" role="status"></span></div>
+          <div class="demo-composer-area">
+            <div class="demo-prompts"><button type="button" id="demo-sample" disabled>＋ 会議メモのサンプル</button><button type="button" id="demo-refine" disabled>もっと短くまとめて</button></div>
+            <p class="demo-error" id="demo-error" role="alert" hidden></p>
+            <form id="demo-chat-form"><div class="demo-composer"><label class="demo-sr-only" for="demo-message">AI社員へのメッセージ</label><textarea id="demo-message" rows="3" maxlength="500" placeholder="AI社員をつくると、ここに入力できます" disabled required></textarea><div class="demo-composer-bottom"><span id="demo-model-label">Gemini · 体験版</span><div><span id="demo-char-count">0 / 500</span><button type="submit" id="demo-send" aria-label="メッセージを送信" disabled><span aria-hidden="true">↑</span></button></div></div></div></form>
+            <div class="demo-composer-note"><span id="demo-quota" role="status">利用回数を確認中…</span><span>Ctrl / ⌘ ＋ Enter で送信</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="demo-disclosure"><span aria-hidden="true">ⓘ</span><p>この体験版はGeminiの無料枠を使用します。入力はGoogleの製品改善に利用される場合があるため、個人情報・社外秘は入力せず、サンプルでお試しください。回答は内容をご確認ください。<a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">データの取り扱い ↗</a><br><span>1ブラウザーにつき1日10回まで（日本時間0時に更新）。無料枠や全体の利用状況により、上限前に受付を停止することがあります。</span></p></div>
+      <noscript><p>この体験にはJavaScriptを有効にしてください。</p></noscript>
+    </div></section>
+
     <section class="section" id="environment"><div class="container">
       <div class="eyebrow">CORPORATE AI ENVIRONMENT</div><h2>全社員に、<br><span class="keyword">迷わず使えるAI環境。</span></h2><p class="lead">資料を探す。文章をつくる。使われ方を確かめる。<br>毎日の仕事が、ひとつの画面につながります。</p>
       <div class="product-row">
@@ -240,7 +278,7 @@
       <p class="note">※画面内の数値・モデル名・機能表示は、掲載時点の表示例です。</p>
     </div></section>
 
-    <section class="section tinted" id="security"><div class="container security-wrap"><div><div class="eyebrow">SECURITY</div><h2>会社で使うための、<br><span class="keyword">安心を標準に。</span></h2><p class="lead">データも、アカウントも、利用状況も。<br>法人利用を前提に管理できます。</p><a class="button" href="https://tenho7.jp/contact/">セキュリティについて相談する</a></div><div class="security-list"><div class="security"><b>組織ごとに環境分離</b><p>会社の資料・会話を分けて管理。</p></div><div class="security"><b>学習に使われない</b><p>入力データをAIの学習に利用しません。</p></div><div class="security"><b>SSO・アクセス管理</b><p>Google SSO対応。退職者は一括停止。</p></div><div class="security"><b>ログ・上限アラート</b><p>操作を記録し、使いすぎをお知らせ。</p></div></div></div></section>
+    <section class="section tinted" id="security"><div class="container security-wrap"><div><div class="eyebrow">SECURITY</div><h2>会社で使うための、<br><span class="keyword">安心を標準に。</span></h2><p class="lead">データも、アカウントも、利用状況も。<br>法人利用を前提に管理できます。</p><a class="button" href="https://tenho7.jp/contact/">セキュリティについて相談する</a></div><div class="security-list"><div class="security"><b>組織ごとに環境分離</b><p>会社の資料・会話を分けて管理。</p></div><div class="security"><b>学習に使われない</b><p>法人向け本サービスの入力データをAIの学習に利用しません（このページの無料体験版を除く）。</p></div><div class="security"><b>SSO・アクセス管理</b><p>Google SSO対応。退職者は一括停止。</p></div><div class="security"><b>ログ・上限アラート</b><p>操作を記録し、使いすぎをお知らせ。</p></div></div></div></section>
 
     <section class="section" id="support"><div class="container"><div class="eyebrow">ONBOARDING & SUPPORT</div><h2>環境は<span class="keyword">即日。</span><br>AI社員は<span class="keyword">2週間。</span></h2><p class="lead">業務の棚卸しから、最初のAI社員づくりまで。<br>TENHOが一緒に進めます。</p><div class="timeline"><div class="step"><b>即日</b><h3>環境を配布</h3><p>全社員がチャットを使える状態に。</p></div><div class="step"><b>1</b><h3>業務を選ぶ</h3><p>任せたいバックオフィス業務を整理。</p></div><div class="step"><b>2週</b><h3>AI社員が稼働</h3><p>御社の資料と手順に合わせて構築。</p></div><div class="step"><b>継続</b><h3>活用を広げる</h3><p>振り返りから、次のAI化へ。</p></div></div><div class="support-band"><div><div class="eyebrow" style="color:#a9c7ff">TENHO SUPPORT</div><h3>つくる。その先の、<br>「使いこなす」まで。</h3><p>12ヶ月で自走を目指す伴走プログラム。<br>研修・活用レビュー・追加開発もご用意。<br><small>※伴走支援・追加開発・勉強会は別途オプション。</small></p></div><div class="support-stats"><div><strong>45,000人+</strong><span>研修・講演の累計受講者数</span></div><div><strong>2年連続 1位</strong><span>Google リスキリング<br>コンソーシアム</span></div><div><strong>経産省受賞</strong><span>AI内製化支援の実績</span></div></div></div></div></section>
 
@@ -248,7 +286,7 @@
 
     <section class="section" id="pricing"><div class="container"><div class="eyebrow">PRICING</div><h2>まずは<span class="keyword">1ヶ月。</span><br>自社の仕事で確かめる。</h2><p class="lead">体験のあとには、<span class="highlight">実際に動くAI社員が1体。</span><br>学ぶ・試す・つくるを、ひとつのパッケージで。</p><div class="pricing-grid"><article class="price-card accent"><div class="eyebrow">TRIAL PACKAGE</div><h3>導入体験パッケージ</h3><div class="price keyword"><div class="price-line"><span>300,000</span><span class="price-unit">円</span></div><p class="price-context">税別 ／ 1社・1ヶ月</p></div><div class="package"><b>01</b><span><strong>90分の実践セミナー</strong><br>自分の仕事で試す、個人ワーク中心。</span></div><div class="package"><b>02</b><span><strong>1ヶ月・最大50ID</strong><br>セミナー前日にアカウントを配布。</span></div><div class="package"><b>03</b><span><strong>AI社員1体を、一緒に構築</strong><br>ヒアリング・設計・テストまで伴走。</span></div><p><a class="button primary" href="https://tenho7.jp/contact/">体験パッケージを相談する →</a></p></article><article class="price-card"><div class="eyebrow">AFTER TRIAL</div><h3>トライアル後のご契約</h3><div class="price keyword"><div class="price-line"><span>0</span><span class="price-unit">円</span></div><p class="price-context">パッケージからのご契約時の初期費用</p></div><ul><li>月額基本料金：<strong>2,500円／ID・月</strong></li><li>利用量パック：<strong>5万円〜</strong>（月250〜1,500タスク）</li><li>AI社員は<strong>何体つくっても無料</strong></li><li>会社規模とAI社員の仕事量に合わせて</li><li>伴走支援・追加開発・勉強会はオプション</li></ul><p class="note">※通常導入の初期費用は30万円。本パッケージからのご契約では不要です。</p><p><a class="button" href="https://tenho7.jp/contact/">料金の相談をする</a></p></article></div></div></section>
 
-    <section class="section tinted" id="faq"><div class="container"><div class="eyebrow">FAQ</div><h2>よくあるご質問</h2><div class="faq-grid"><details><summary>セキュリティは大丈夫ですか？</summary><p>組織ごとに環境を完全分離し、入力データは学習に利用しません。全操作をログに残せます。</p></details><details><summary>ITに詳しい社員がいなくても使えますか？</summary><p>導入設計から研修までTENHOが伴走します。難しいAI社員の構築もご支援します。</p></details><details><summary>既存のSlackやGoogle Workspaceとは連携できますか？</summary><p>併用が前提です。Google、Microsoft、Notion、Slack、Plaudなどと接続できます。</p></details><details><summary>AI社員の仕事はどこまで任せられますか？</summary><p>議事録、集計、問い合わせ、文書作成などの定型業務から始めます。社外に出るものは人の承認を挟めます。</p></details></div></div></section>
+    <section class="section tinted" id="faq"><div class="container"><div class="eyebrow">FAQ</div><h2>よくあるご質問</h2><div class="faq-grid"><details><summary>セキュリティは大丈夫ですか？</summary><p>法人向け本サービスでは、組織ごとに環境を分離し、入力データは学習に利用しません。このページの無料体験版はGoogleの無料枠を使うため、入力が製品改善に利用される場合があります。</p></details><details><summary>ITに詳しい社員がいなくても使えますか？</summary><p>導入設計から研修までTENHOが伴走します。難しいAI社員の構築もご支援します。</p></details><details><summary>既存のSlackやGoogle Workspaceとは連携できますか？</summary><p>併用が前提です。Google、Microsoft、Notion、Slack、Plaudなどと接続できます。</p></details><details><summary>AI社員の仕事はどこまで任せられますか？</summary><p>議事録、集計、問い合わせ、文書作成などの定型業務から始めます。社外に出るものは人の承認を挟めます。</p></details></div></div></section>
 
     <section class="final"><div class="container"><div class="eyebrow" style="color:#a9c7ff">GET STARTED</div><h2>あなたの仕事なら、<br>何を任せられる？</h2><p>実際の操作画面で、シナプスAIをご紹介します。</p><a class="button" href="https://tenho7.jp/contact/">資料請求・無料デモを申し込む →</a></div></section>
   </main>
